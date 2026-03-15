@@ -1,0 +1,26 @@
+3	9	12:12:09	USE LibraryManagement	0 row(s) affected	0.000 sec
+3	10	12:12:09	INSERT INTO authors (author_name)
+ VALUES
+     ('George Orwell'),
+     ('J.K. Rowling')	2 row(s) affected
+ Records: 2  Duplicates: 0  Warnings: 0	0.000 sec
+3	11	12:12:09	INSERT INTO genres (genre_name)
+ VALUES
+     ('Dystopian'),
+     ('Fantasy')	2 row(s) affected
+ Records: 2  Duplicates: 0  Warnings: 0	0.015 sec
+3	12	12:12:09	INSERT INTO books (title, publication_year, author_id, genre_id)
+ VALUES
+     ('1984', 1949, 1, 1),
+     ('Harry Potter and the Philosopher''s Stone', 1997, 2, 2)	2 row(s) affected
+ Records: 2  Duplicates: 0  Warnings: 0	0.000 sec
+3	13	12:12:09	INSERT INTO users (username, email)
+ VALUES
+     ('oleg_user', 'oleg@example.com'),
+     ('anna_reader', 'anna@example.com')	2 row(s) affected
+ Records: 2  Duplicates: 0  Warnings: 0	0.000 sec
+3	14	12:12:09	INSERT INTO borrowed_books (book_id, user_id, borrow_date, return_date)
+ VALUES
+     (1, 1, '2026-03-01', '2026-03-10'),
+     (2, 2, '2026-03-05', '2026-03-15')	2 row(s) affected
+ Records: 2  Duplicates: 0  Warnings: 0	0.000 sec

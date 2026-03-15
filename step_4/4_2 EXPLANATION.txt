@@ -1,0 +1,7 @@
+When some INNER JOIN operators were replaced with LEFT JOIN, the number of rows did not decrease or increase.
+
+INNER JOIN returns only rows that have matching values in both joined tables.
+LEFT JOIN returns all rows from the left table even if there is no match in the right table.
+RIGHT JOIN returns all rows from the right table even if there is no match in the left table.
+
+In this dataset, every logical reference has a matching row, so the count remained the same.

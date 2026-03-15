@@ -1,0 +1,26 @@
+USE LibraryManagement;
+
+INSERT INTO authors (author_name)
+VALUES
+    ('George Orwell'),
+    ('J.K. Rowling');
+
+INSERT INTO genres (genre_name)
+VALUES
+    ('Dystopian'),
+    ('Fantasy');
+
+INSERT INTO books (title, publication_year, author_id, genre_id)
+VALUES
+    ('1984', 1949, 1, 1),
+    ('Harry Potter and the Philosopher''s Stone', 1997, 2, 2);
+
+INSERT INTO users (username, email)
+VALUES
+    ('oleg_user', 'oleg@example.com'),
+    ('anna_reader', 'anna@example.com');
+
+INSERT INTO borrowed_books (book_id, user_id, borrow_date, return_date)
+VALUES
+    (1, 1, '2026-03-01', '2026-03-10'),
+    (2, 2, '2026-03-05', '2026-03-15');
